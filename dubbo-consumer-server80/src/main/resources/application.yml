@@ -1,0 +1,19 @@
+server:
+  port: 81
+
+
+dubbo:
+  application:
+    name:  dubbo-consumer
+  registry:
+    address: localhost:2181
+    # 自己的zookeeperip
+    protocol: zookeeper
+    check: false
+  monitor:
+    protocol: register
+  consumer:
+    check:  false
+    timeout: 3000
+
+
